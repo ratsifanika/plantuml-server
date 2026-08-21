@@ -5,7 +5,6 @@ services:
       - 8080:8080
     env_file:
       - stack.env
-    restart: always
     networks:
       - plantuml_net
 networks:
