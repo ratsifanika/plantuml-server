@@ -11,6 +11,6 @@ services:
         driver: bridge
         ipam:
           config:
-            - subnet: 172.18.10.0/29
-              gateway: 172.18.10.1
+            - subnet: 172.19.10.0/29
+              gateway: 172.19.10.1
     
