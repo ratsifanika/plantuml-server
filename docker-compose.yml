@@ -7,10 +7,12 @@ services:
       - stack.env
     restart: always
     networks:
-      app_net:
-        driver: bridge
-        ipam:
-          config:
-            - subnet: 172.19.10.0/29
-              gateway: 172.19.10.1
+      - plantuml_net
+networks:
+  plantuml_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.19.10.0/29
+          gateway: 172.19.10.1
     
