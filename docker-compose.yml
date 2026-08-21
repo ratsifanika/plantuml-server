@@ -6,4 +6,11 @@ services:
     env_file:
       - stack.env
     restart: always
+    networks:
+      app_net:
+        driver: bridge
+        ipam:
+          config:
+            - subnet: 172.18.10.0/29
+              gateway: 172.18.10.1
     
